@@ -1,0 +1,11 @@
+TV Home includes and modifies the Android launcher component from CleanYourTV.
+
+Upstream project: https://github.com/Gathin23/cleanyourtv
+Upstream copyright: Copyright (c) 2026 Gathin
+License: MIT (see LICENSE)
+
+TV Home 1.0.0 adds universal first-run configuration, English and Russian onboarding, built-in backgrounds, neutral package defaults, glass-dock styling, and standalone release packaging.
+
+The Outfit typeface in launcher/app/src/main/res/font/outfit.ttf is copyright The Outfit Project Authors and is licensed under the SIL Open Font License 1.1. See launcher/FONT-LICENSE-OFL.txt.
+
+Names and logos visible in example screenshots are the property of their respective owners. They identify applications installed on the test television and are not bundled with, sponsored by, or endorsed by TV Home.

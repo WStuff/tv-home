@@ -1,0 +1,76 @@
+name: Bug report
+description: Report a reproducible TV Home problem
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve TV Home. Remove IP addresses, Wi-Fi names, account details, device IDs, and ADB keys before submitting.
+  - type: input
+    id: version
+    attributes:
+      label: TV Home version
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: TV or streaming-device model
+      placeholder: Manufacturer and exact model
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android TV / Google TV version
+      placeholder: Android TV 11
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - First-run setup
+        - Dock or Home apps
+        - All apps
+        - Remote navigation
+        - Backgrounds or visual effects
+        - Installation or default Home
+        - Settings or screensaver
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: Tell us exactly what to press and what appears.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or logs
+      description: Optional. Redact private information first.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues for this problem.
+          required: true
+        - label: I removed private device, network, and account information.
+          required: true
