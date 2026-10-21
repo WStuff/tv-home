@@ -37,7 +37,7 @@ jobs:
       - uses: android-actions/setup-android@v3
         with:
           packages: platforms;android-34 build-tools;34.0.0
-      - uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/setup-gradle@v6
 
       - name: Validate version and signing secrets
         shell: bash
