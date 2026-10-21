@@ -39,7 +39,7 @@ jobs:
           echo "release APK: $((size / 1024)) KiB"
           test "$size" -lt 12582912 || { echo "APK exceeds the 12 MiB release limit"; exit 1; }
       - name: Upload test-only APK
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: TV-Home-ci-debug-signed-do-not-publish
           path: launcher/app/build/outputs/apk/release/app-release.apk
