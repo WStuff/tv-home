@@ -7,7 +7,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        // Opt-in identity for firmware with a package-name HOME allowlist; see docs/devices/xiaomi-mitv-aetp0-dofus.md.
+        // Opt-in identity for firmware with a package-name HOME allowlist.
         // A neutral default keeps this build independent from any one person's TV setup.
         // Public forks should override it with -PlauncherApplicationId=their.own.id.
         applicationId providers.gradleProperty('launcherApplicationId').getOrElse('com.tvhome.launcher')
