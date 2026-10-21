@@ -81,7 +81,7 @@ jobs:
           version="${RELEASE_TAG#v}"
           apk="TV-Home-v${version}.apk"
           cp launcher/app/build/outputs/apk/release/app-release.apk "$apk"
-          apksigner verify --verbose --print-certs "$apk"
+          "$ANDROID_HOME/build-tools/34.0.0/apksigner" verify --verbose --print-certs "$apk"
           sha256sum "$apk" > "$apk.sha256"
           echo "apk=$apk" >> "$GITHUB_OUTPUT"
 
